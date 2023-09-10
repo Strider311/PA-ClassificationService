@@ -1,0 +1,8 @@
+rasterio
+matplotlib
+numpy
+python-dotenv
+tifffile
+pika
+pyfiglet
+flask
