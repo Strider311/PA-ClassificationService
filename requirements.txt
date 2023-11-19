@@ -1,8 +1,4 @@
-rasterio
-matplotlib
 numpy
+matplotlib
+opencv-contrib-python
 python-dotenv
-tifffile
-pika
-pyfiglet
-flask
