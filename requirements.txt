@@ -1,4 +1,6 @@
 numpy
+pika
 matplotlib
 opencv-contrib-python
 python-dotenv
+requests

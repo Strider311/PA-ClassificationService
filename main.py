@@ -1,9 +1,11 @@
 import logging
 from pyfiglet import Figlet
 from dotenv import load_dotenv
+from Processors.ImageProcessor import ImageProcessor
 import os
 import datetime
 import sys
+
 
 def init_logger():
 
@@ -23,6 +25,7 @@ def init_logger():
     log.addHandler(file)
     log.setLevel(level=logging.DEBUG)
 
+
 def startup_splash():
 
     f = Figlet(font='slant')
@@ -30,10 +33,13 @@ def startup_splash():
     print(f"Version: {os.getenv('VERSION')}")
     print("-------------------------------------------------------")
 
+
 def main():
     load_dotenv()
     startup_splash()
     init_logger()
+    _ = ImageProcessor()
+
 
 if __name__ == '__main__':
     try:
